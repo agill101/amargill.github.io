@@ -7,16 +7,17 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <style>
     body {font-family: Arial, sans-serif; margin: 0; color: #222; background-color: #f9f9f9;}
-    header {background-color: #0A3D91; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center;}
+    header {background-color: #0A3D91; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000;}
     header h1 {margin: 0; font-size: 1.5rem;}
     nav a {color: white; margin: 0 1rem; text-decoration: none; font-weight: 500;}
     nav a:hover {text-decoration: underline;}
-    section {padding: 3rem 2rem; max-width: 900px; margin: auto;}
+    section {padding: 3rem 2rem; max-width: 900px; margin: auto; background: white; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); margin-bottom: 2rem;}
     h2 {color: #0A3D91; border-bottom: 2px solid #0A3D91; display: inline-block; margin-bottom: 1rem;}
     img.profile {width: 180px; border-radius: 50%; margin: 1rem 0;}
     .btn {background-color: #0A3D91; color: white; padding: 0.6rem 1rem; border-radius: 4px; text-decoration: none; display: inline-block; margin-top: 1rem;}
     .btn:hover {background-color: #082e6b;}
-    footer {background-color: #0A3D91; color: white; text-align: center; padding: 1rem; margin-top: 2rem;}
+    footer {background-color: #0A3D91; color: white; text-align: center; padding: 1rem; margin-top: 2rem; font-size: 0.9rem; opacity: 0.85;}
+    ul {line-height: 1.6;}
   </style>
 </head>
 <body>
@@ -27,6 +28,7 @@
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -71,10 +73,33 @@
     </ul>
   </section>
 
+  <section id="education">
+    <h2>Education</h2>
+    <h3>University of Warwick – MSc Cybersecurity Management (2024–2025)</h3>
+    <p><strong>Professional Module Summaries:</strong></p>
+    <ul>
+      <li><strong>Cyber Security Consultancy:</strong> Delivered client-based security assessments using ISO 27001 and NIST CSF frameworks to identify risks, recommend controls, and align governance objectives.</li>
+      <li><strong>Digital Forensic Investigation:</strong> Applied forensic tools (Autopsy, FTK Imager) for evidence acquisition and analysis while adhering to legal chain-of-custody standards.</li>
+      <li><strong>Managing Cyber Risk, Audit & Compliance:</strong> Built compliance audit models using ISO 27005 and GDPR principles, producing risk registers and mitigation reports for enterprise clients.</li>
+      <li><strong>Cyber Security Research Methods:</strong> Designed data-driven research projects focused on AI-based threat models and cybersecurity governance frameworks (MITRE ATT&CK, ISO 42001).</li>
+      <li><strong>Human Factors in Cyber Security:</strong> Explored user psychology, awareness training, and organisational culture as key mitigations for insider and social engineering threats.</li>
+      <li><strong>Applied Cryptography:</strong> Evaluated modern encryption and key management techniques and their implementation vulnerabilities in enterprise environments.</li>
+      <li><strong>Network Security:</strong> Configured and secured networks using VPNs, IDS/IPS, and segmentation, developing hands-on understanding of intrusion detection and response.</li>
+      <li><strong>Cyber Incident Management:</strong> Executed full NIST SP 800-61 and ISO 27035 incident lifecycle simulations, covering detection, containment, eradication, and recovery procedures.</li>
+      <li><strong>Legal & Ethical Aspects of Incident Response:</strong> Interpreted GDPR Article 33, UK Cyber Security Bill, and ethical codes to evaluate legal accountability and responsible disclosure.</li>
+      <li><strong>Post-Incident Analysis & Resilience:</strong> Used NIST, ISO 27035, and MITRE ATT&CK to build continuous improvement metrics (MTTD, MTTR) and formulate lessons-learned frameworks.</li>
+    </ul>
+
+    <h3>Aston University – BSc Computer Science (2021–2024)</h3>
+    <ul>
+      <li><strong>Key Modules:</strong> Secure Network Services, Enterprise Computing Strategies, Data Structures & Algorithms, Artificial Intelligence, Software Engineering.</li>
+    </ul>
+  </section>
+
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:amargill101@gmail.com">amargill101@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/amar-gill-523331200/" target="_blank">linkedin.com/in/amar-gill-523331200</a></p>
+    <p>📧 <a href="mailto:amargill101@gmail.com">amargill101@gmail.com</a></p>
+    <p>💼 <a href="https://www.linkedin.com/in/amar-gill-523331200/" target="_blank">LinkedIn</a></p>
     <a href="Amar_Gill_CV.pdf" class="btn" download>Download CV</a>
   </section>
 
