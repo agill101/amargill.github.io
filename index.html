@@ -38,7 +38,8 @@
     <svg class="shield" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path fill="#0A3D91" d="M32 2l28 10v17c0 18-12 32-28 33C16 61 4 47 4 29V12l28-10z"/><path fill="white" opacity="0.3" d="M32 4L6 13v16c0 16 11 30 26 31 15-1 26-15 26-31V13L32 4z"/></svg>
     <h1>Amar Gill</h1><h2>Cybersecurity Analyst | MSc Cyber Security Management, University of Warwick</h2>
     <p>Open to Graduate Roles in Consulting / Security Operations</p>
-    <button class="hire-btn" onclick="window.location.href='mailto:amargill101@gmail.com'">Hire Me</button>
+    <button class="hire-btn" onclick="scrollToContact()">Hire Me</button>
+	  
     <p><a href="mailto:amargill101@gmail.com">amargill101@gmail.com</a> | <a href="https://www.linkedin.com/in/amar-gill-523331200/" target="_blank">LinkedIn</a></p>
   </section>
   <section id="about" data-animate><h2>About Me</h2><p>MSc Cybersecurity Management graduate (Warwick) with consulting and technical experience across GRC, incident response, and cloud security. Skilled in applying ISO 27001, NIST CSF, and GDPR frameworks to secure financial services and enterprise environments. Strong communicator capable of bridging technical and non-technical stakeholders.</p></section>
@@ -53,6 +54,20 @@
     const elements=document.querySelectorAll('[data-animate]');
     const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible');});},{threshold:0.2});
     elements.forEach(el=>observer.observe(el));
+
+function scrollToContact() {
+  const contact = document.getElementById('contact');
+  contact.scrollIntoView({ behavior: 'smooth' });
+  
+  const button = document.querySelector('.hire-btn');
+  button.style.transform = 'scale(0.95)';
+  setTimeout(() => button.style.transform = 'scale(1)', 150);
+}
+.hire-btn:active {
+  transform: scale(0.95);
+  transition: transform 0.1s;
+}
+
   </script>
 </body>
 </html>
